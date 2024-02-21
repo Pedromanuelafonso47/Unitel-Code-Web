@@ -1,0 +1,14 @@
+Para que não nos esqueçamos, estes são os comando de Git e a devida ordem que foram colocados na aula de hoje:
+git init
+git config --global user.name "[Coloque seu nome de usuario do GitHub]"
+git config --global user.email "[Coloque seu email de usuario do GitHub]"
+git status
+git add .
+git status
+git commit -m "Primeiro codigo"
+
+git remote add origin https://github.com/[Link_do_seu_reportorio]
+git push -u origin main
+paddig e a parte interna mexer o que esta dentro 
+margin e a externa  o golbal 
+hover colou deixou 

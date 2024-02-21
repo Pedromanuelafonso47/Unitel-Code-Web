@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --background: #e4b562;
+    --foreground: #ffffff;
+
+    --color-primary: #a3581d;
+    --color-secondary: #dcab5a;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--background);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    height: 100%;
+}
+
+.container-login {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    width: 320px;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    color: var(--color-secondary);
+}
+
+.form-login input {
+    background-color: var(--color-secondary);
+    border: none;
+    padding: 16px;
+    border-radius: 1.2rem;
+    width: 300px;
+}
+
+.form-login input::placeholder {
+    color: var(--foreground);
+}
+
+/* MY CUSTOM CSS HERE */
+div.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    color: var(--color-primary);
+}
+
+div.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: calc(50% - 6px);
+}
+
+div.remember-me input[type=checkbox] {
+    appearance: none;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+}
+
+div.divisor {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+
+    color: var(--color-primary);
+}
+
+div.divisor span:nth-child(1)::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    height: 2px;
+    width: calc(45% - 10px);
+    background: var(--color-primary);
+}
+
+div.divisor span:nth-child(2)::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: 0;
+    height: 2px;
+    width: calc(45% - 10px);
+    background: var(--color-primary);
+}
